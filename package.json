@@ -18,7 +18,7 @@
     }
   },
   "lint-staged": {
-    "src/**/*.js": ["yarn lint --fix", "yarn test:ci --findRelatedTests --bail"]
+    "src/**/*.js": ["yarn lint --fix", "yarn test --findRelatedTests --bail"]
   },
   "repository": {
     "type": "git",
