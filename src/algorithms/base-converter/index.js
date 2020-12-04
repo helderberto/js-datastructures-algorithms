@@ -1,4 +1,4 @@
-import Stack from '../../data-structures/stack';
+import Stack from '../../data-structures/Stack';
 
 export function baseConverter(decimalNumber, base) {
   const digits = '0123456789ABCDEF';
