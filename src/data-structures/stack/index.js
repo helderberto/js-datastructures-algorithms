@@ -1,6 +1,6 @@
 class Stack {
-  constructor(items = []) {
-    this.items = items;
+  constructor() {
+    this.items = [];
   }
 
   push(item) {
@@ -17,7 +17,7 @@ class Stack {
     return this.items[this.items.length - 1];
   }
 
-  print() {
+  toString() {
     return this.items.toString();
   }
 

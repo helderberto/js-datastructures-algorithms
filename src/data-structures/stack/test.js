@@ -31,19 +31,22 @@ describe('Stack', () => {
     expect(stack.items).toEqual(['any_text1']);
   });
 
-  it('should return the element at the top of the Stack', () => {
-    const stack = new Stack(['any_text1', 'any_text2']);
-
-    expect(stack.peek()).toBe('any_text2');
-  });
-
-  it('should print Stack as a string', () => {
+  it('should return the top element from Stack', () => {
     const stack = new Stack();
 
     stack.push('any_text');
     stack.push('any_text2');
 
-    expect(stack.print()).toBe('any_text,any_text2');
+    expect(stack.peek()).toBe('any_text2');
+  });
+
+  it('should parse Stack items to string', () => {
+    const stack = new Stack();
+
+    stack.push('any_text');
+    stack.push('any_text2');
+
+    expect(stack.toString()).toBe('any_text,any_text2');
   });
 
   it('should clear Stack', () => {
@@ -61,7 +64,9 @@ describe('Stack', () => {
   });
 
   it('should returns Stack size', () => {
-    const stack = new Stack(['any_text']);
+    const stack = new Stack();
+
+    stack.push('any_text');
 
     expect(stack.size()).toBe(1);
   });
