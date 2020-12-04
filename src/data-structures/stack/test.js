@@ -7,12 +7,6 @@ describe('Stack', () => {
     expect(stack.items).toEqual([]);
   });
 
-  it('should throws an error if try to add empty value', () => {
-    const stack = new Stack();
-
-    expect(() => stack.push('')).toThrow(Error);
-  });
-
   it('should add an item to Stack', () => {
     const stack = new Stack();
 

@@ -4,13 +4,11 @@ class Stack {
   }
 
   push(item) {
-    if (!item) throw Error('you are trying to add an empty value');
-
     this.items.push(item);
   }
 
   pop() {
-    this.items.pop();
+    return this.items.pop();
   }
 
   peek() {
